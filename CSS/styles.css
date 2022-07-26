@@ -5,8 +5,11 @@
 .carousel .carousel-item{
     height: 75vh;
 }
-
 .container-fluid .carousel{
     padding-left: 0px;
     padding-right: 0px;
+}
+.verticalLine {
+    border-right: 1px solid #b3b3b6;
+    height: 300px;
 }
