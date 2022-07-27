@@ -13,3 +13,8 @@
     border-right: 1px solid #b3b3b6;
     height: 300px;
 }
+.projects{
+    background-image: url("../Images/coming-soon2.jpg");
+    height: 500px;
+    background-size: cover;
+}
