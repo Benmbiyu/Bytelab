@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <head>
+  <!-- mdbootstrap -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="CSS/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navigation-bar"  data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
-    <div class="container">
+  <div class="container">
 <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navigation-bar">
             <div class="container-fluid row">
-              <a class="navbar-brand col-3" href="#"><strong>ByteLab</strong></a>
+              <a class="navbar-brand col-3" href="#home"><strong>BYTELAB</strong></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
                 <div class="navbar-nav col-6">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Services</a>
-                  <a class="nav-link">Projects</a>
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#services">Services</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </div>
                 <ul class="navbar-nav col-3">
                     <li class="nav-item">
@@ -51,7 +66,7 @@
         </div>
         
 <!-- Carousel -->
-<div class="container-fluid">
+<div class="container-fluid" id="home">
     <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -62,21 +77,21 @@
           <div class="carousel-item active">
             <img src="./Images/macbook-code.jpg" class="d-block w-100" alt="bytelab">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Brilliance</h5>
+              <h5><strong>Brilliance</strong></h5>
               <p>IT solutions at your reach.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./Images/x1-carbon.jpg" class="d-block w-100" alt="bytelab">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Precision</h5>
+              <h5><strong>Precision</strong></h5>
               <p>Quality services & products for any fit.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./Images/php-code.jpg" class="d-block w-100" alt="bytelab">
+            <img src="./Images/gaming-keyboard.jpg" class="d-block w-100" alt="bytelab">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Elegance</h5>
+              <h5><strong>Elegance</strong></h5>
               <p>We trust you, you can rely on us.</p>
             </div>
           </div>
@@ -93,7 +108,7 @@
 </div>
 <!-- About section -->
 <div class="container" id="about">
-    <h1 class="display-3 text-center">About</h1>
+    <h1 class="display-3 text-center"><strong>About</strong></h1>
     <hr>
 
     <div class="card mb-5 text-bg-dark shadow-lg">
@@ -102,8 +117,8 @@
             <img src="./Images/gaming-keyboard.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">ByteLab</h5>
+            <div class="card-body hover-zoom hover-overlay hover-zoom hover-shadow ripple">
+              <h5 class="card-title"><strong>ByteLab</strong></h5>
               <p class="card-text">ByteLab is a business dedicated to solving your IT hurdles. We deal with Software and Hardware solutions for our clients. Get a professional business website at an affordable price, be it a CMS, ERP or a simple landing page.</p>
               <p>IT infrastructure is also taken care of, from Computer repairs & Maintenance, Networking solutions and Printer Repair & Maintenance.</p>
               <p class="card-text"><small class="text-muted">All your IT Solutions under one roof.</small></p>
@@ -115,35 +130,35 @@
 
 </div>
 <!-- Services section -->
-<div class="container">
-    <h1 class="display-3 text-center">Services</h1>
+<div class="container" id="services">
+    <h1 class="display-3 text-center"><strong>Services</strong></h1>
     <hr>
     <div class="row">
         <div class="col-4">
-            <div class="card shadow mb-5">
-                <img src="./Images/web-designer.jpg" class="card-img-top" alt="...">
+            <div class="card shadow mb-5 hover-zoom">
+                <img src="./Images/web-designer.jpg" class="card-img-top" alt="ByteLab">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Website Development</h5>
+                    <h5 class="card-title text-center"><strong>Website Development</strong></h5>
                     <hr>
                   <p class="card-text">Be it a personal portfolio, business landing page or a complex e-commerce site, we have you covered to deliver quality, eye-catching & responsive websites.</p>
                 </div>
             </div>
         </div>
         <div class="col-4">
-            <div class="card shadow mb-5">
-                <img src="./Images/business-software.jpg" class="card-img-top" alt="...">
+            <div class="card shadow mb-5 hover-zoom">
+                <img src="./Images/business-software.jpg" class="card-img-top" alt="ByteLab">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Business Software Solutions</h5>
+                    <h5 class="card-title text-center"><strong>Business Software Solutions</strong></h5>
                     <hr>
                   <p class="card-text">Tech has made it possible to monitor our businesses on the go. We offer business software solutions ranging from ERP's, CMS's & PoS systems that can work online & offline.</p>
                 </div>
             </div>
         </div>
         <div class="col-4">
-            <div class="card shadow mb-5">
-                <img src="./Images/graphic-design.jpg" class="card-img-top" alt="...">
+            <div class="card shadow mb-5 hover-zoom">
+                <img src="./Images/graphic-design.jpg" class="card-img-top" alt="ByteLab">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Graphic Design</h5>
+                    <h5 class="card-title text-center"><strong>Graphic Design</strong></h5>
                     <hr>
                   <p class="card-text">We're ever ready to cater for all your design & printing needs, whether Business cards, T-shirt branding, Banners & E-flyers. Be sure of precise & pixel quality products.</p>
                 </div>
@@ -152,30 +167,30 @@
     </div>
     <div class="row">
         <div class="col-4">
-            <div class="card shadow mb-5">
-                <img src="./Images/comp-repair.jpg" class="card-img-top" alt="...">
+            <div class="card shadow mb-5 hover-zoom">
+                <img src="./Images/comp-repair.jpg" class="card-img-top" alt="ByteLab">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Computer Repair & Maintenance</h5>
+                    <h5 class="card-title text-center"><strong>Computer Repair & Maintenance</strong></h5>
                     <hr>
                   <p class="card-text">PC's breakdown and need maintenance & repairs every once in a while. With extensive expertise in this field, we'll fix your desktops, laptops and mobile devices affordably.</p>
                 </div>
             </div>
         </div>
         <div class="col-4">
-            <div class="card shadow mb-5">
-                <img src="./Images/networking4.jpg" class="card-img-top" alt="...">
+            <div class="card shadow mb-5 hover-zoom">
+                <img src="./Images/networking4.jpg" class="card-img-top" alt="ByteLab">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Network Installtion, Repair & Maintenance</h5>
+                    <h5 class="card-title text-center"><strong>Network Installtion, Repair & Maintenance</strong></h5>
                     <hr>
                   <p class="card-text">Planning to set up a network in your home, office or business? You can rely on us to setup cable, wireless and server-client networks as well as maintain existing ones.</p>
                 </div>
             </div>
         </div>
         <div class="col-4">
-            <div class="card shadow mb-5" >
-                <img src="./Images/motherboard.jpg" class="card-img-top" alt="...">
+            <div class="card shadow mb-5 hover-overlay hover-zoom hover-shadow ripple">
+                <img src="./Images/motherboard.jpg" class="card-img-top" alt="ByteLab">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Printer Repair & Maintenance</h5>
+                    <h5 class="card-title text-center"><strong>Printer Repair & Maintenance</strong></h5>
                     <hr>
                   <p class="card-text">Printers get faulty and require accessories like toners and catridges frequently. We are able to solve hardware & software issues and supply printer accessories.</p>
                 </div>
@@ -184,8 +199,8 @@
     </div>
 </div>
 <!-- Projects Sections -->
-<div class="container">
-    <h1 class="display-3 text-center">Projects</h1>
+<div class="container hover-overlay hover-zoom hover-shadow ripple mb-5" id="projects">
+    <h1 class="display-3 text-center"><strong>Projects</strong></h1>
     <hr>
     <div class="projects mb-5">
 
@@ -206,14 +221,14 @@
 </div>
 
 <!-- Contact Section -->
-<div class="container-fluid">
+<div class="container-fluid" id="contact">
     <footer class="p-3 mb-2 bg-dark text-white row">
         <h4 class="display-4 text-center">Get In Touch</h4>
         <hr>
         <div class="col-8 verticalLine">
             <form>
                 <div class="mb-3 col-sm-7">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
@@ -252,6 +267,16 @@
 </div>
     <!-- Javascript -->
     <script src="JS/scripts.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <!-- PopperJS -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- bootstrapJS -->
     <script src="JS/bootstrap/js/bootstrap.min.js"></script>
-</body>
+    <!-- mdbootstrap -->
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+  </body>
