@@ -5,7 +5,7 @@
 .carousel .carousel-item{
     height: 75vh;
 }
-.container-fluid .carousel{
+#home{
     padding-left: 0px;
     padding-right: 0px;
 }
