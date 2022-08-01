@@ -21,3 +21,10 @@
 body{
     font-family: "Nunito" !important;
 }
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../Images/Preloader_8.gif') no-repeat center;
+    z-index: 99999;
+}
